@@ -1,0 +1,169 @@
+.page {
+  padding: 2rem 3rem;
+  margin-top: 1rem;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* Category Buttons */
+.categoryButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.catBtn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.catBtn:hover {
+  background: #079696;
+  color: #fff;
+  border-color: #079696;
+}
+
+.active {
+  background: #6610f2;
+  color: #fff;
+  border-color: #6610f2;
+}
+
+.filterBar {
+  margin-bottom: 2rem;
+}
+
+.search {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search:focus {
+  border-color: #079696;
+  box-shadow: 0 0 5px rgba(7, 150, 150, 0.2);
+}
+
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Product Card */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6ecf5;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Product Image */
+.thumb {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdfefe;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .thumb img {
+  transform: scale(1.08);
+}
+
+/* Product Info */
+.body {
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+
+.body h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.4;
+  min-height: 50px; 
+}
+
+/* Price */
+.price {
+  font-size: 1.1rem;
+  color: #079696;
+  font-weight: bold;
+  margin: 0.4rem 0;
+}
+
+/* Category Pill */
+.category {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  background: #eaf7f7;
+  color: #079696;
+  font-weight: 500;
+}
+
+/* Actions */
+.actions {
+  margin-top: 1rem;
+}
+
+.view {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background: linear-gradient(135deg, #6610f2, #4e0dbd);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 3px 8px rgba(102, 16, 242, 0.3);
+}
+
+.view:hover {
+  background: linear-gradient(135deg, #4e0dbd, #3a0a99);
+  transform: translateY(-2px);
+}
+
+/* No Results */
+.noResults {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+
+

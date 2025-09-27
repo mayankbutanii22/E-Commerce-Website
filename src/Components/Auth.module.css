@@ -1,0 +1,134 @@
+.container {
+  max-width: 420px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.welcome {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin: 0.6rem 0;
+  border: 1px solid #d1d5db;
+  border-radius: 0.8rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.6rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  transition: 0.3s;
+}
+
+.googleBtn:hover {
+  background: #f9fafb;
+}
+
+.googleBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.divider span {
+  padding: 0 0.6rem;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 117, 252, 0.3);
+}
+
+.terms {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.terms a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.forgot {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #2563eb;
+  cursor: pointer;
+  text-align: center;
+}
+
+
