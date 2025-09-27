@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../Redux/authSlice';
@@ -8,7 +8,9 @@ function Header() {
   const auth = useSelector((s) => s.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const location = useLocation(); // 👈 to check current path
+  const location = useLocation();
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -18,12 +20,24 @@ function Header() {
         </Link>
       </div>
 
-      <nav className={styles.centerNav}>
-        <Link to="/">Home</Link>
-        <Link to="/admin/products">Admin</Link>
-        <Link to="/cart">Cart</Link>
+      {/* Hamburger Icon */}
+      <div
+        className={styles.hamburger}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        ☰
+      </div>
+
+      {/* Nav Links */}
+      <nav
+        className={`${styles.centerNav} ${menuOpen ? styles.active : ''}`}
+      >
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/admin/products" onClick={() => setMenuOpen(false)}>Admin</Link>
+        <Link to="/cart" onClick={() => setMenuOpen(false)}>Cart</Link>
       </nav>
 
+      {/* Auth Buttons */}
       <div className={styles.authNav}>
         {auth.user ? (
           <>
@@ -66,4 +80,5 @@ function Header() {
 }
 
 export default Header;
+
 

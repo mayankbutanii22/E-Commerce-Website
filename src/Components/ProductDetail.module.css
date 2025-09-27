@@ -69,3 +69,79 @@
   transform: translateY(-2px);
 }
 
+
+
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .detail {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .img,
+  .info {
+    flex: 1 1 100%; /* stack vertically */
+  }
+
+  .info {
+    padding: 1.5rem;
+  }
+
+  .info h2 {
+    font-size: 1.6rem;
+  }
+
+  .info p {
+    font-size: 0.95rem;
+  }
+
+  .info .price {
+    font-size: 1.2rem;
+  }
+
+  .info .add {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .detail {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .img {
+    padding: 0.8rem;
+  }
+
+  .img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info {
+    padding: 1rem;
+  }
+
+  .info h2 {
+    font-size: 1.4rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+  }
+
+  .info .price {
+    font-size: 1.1rem;
+  }
+
+  .info .add {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+

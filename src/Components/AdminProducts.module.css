@@ -130,3 +130,88 @@ h2 {
 .actions .delete:hover {
   background: #dc2626;
 }
+
+
+/* Tablet & Mobile responsiveness */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .form {
+    grid-template-columns: 1fr; /* stack inputs vertically */
+    gap: 1rem;
+  }
+  
+  .form button {
+    grid-column: span 1;
+  }
+
+  .item {
+    flex-direction: column; /* stack thumbnail & info */
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .thumb {
+    margin-bottom: 0.5rem;
+  }
+
+  .actions {
+    top: auto;
+    right: auto;
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .admin {
+    padding: 1rem;
+  }
+
+  .form {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .form input,
+  .form textarea,
+  .form select {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .form button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .item {
+    padding: 0.8rem;
+  }
+
+  .thumb {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info h4 {
+    font-size: 0.95rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+
+  .category {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .actions .edit,
+  .actions .delete {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}

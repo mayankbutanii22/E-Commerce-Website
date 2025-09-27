@@ -131,3 +131,97 @@
   }
 }
 
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .profile {
+    max-width: 500px;
+    padding: 2rem;
+    margin: 3rem auto;
+  }
+
+  .profile h2 {
+    font-size: 1.8rem;
+  }
+
+  .details {
+    padding: 1.2rem;
+    gap: 0.9rem;
+  }
+
+  .details label {
+    font-size: 0.95rem;
+  }
+
+  .details input {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .saveBtn {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .redirect {
+    max-width: 450px;
+    padding: 3rem 1.5rem;
+    margin: 3rem auto;
+  }
+
+  .redirect h2 {
+    font-size: 1.4rem;
+  }
+
+  .redirect p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .profile {
+    max-width: 90%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .profile h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .details {
+    padding: 1rem;
+    gap: 0.7rem;
+  }
+
+  .details label {
+    font-size: 0.9rem;
+  }
+
+  .details input {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .saveBtn {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .redirect {
+    max-width: 90%;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .redirect h2 {
+    font-size: 1.3rem;
+  }
+
+  .redirect p {
+    font-size: 0.9rem;
+  }
+}
+

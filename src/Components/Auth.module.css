@@ -132,3 +132,103 @@ input:focus {
 }
 
 
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 360px; 
+    padding: 1.8rem;
+    margin: 3rem auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .welcome {
+    font-size: 0.8rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .googleBtn {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .divider span {
+    font-size: 0.8rem;
+  }
+
+  .primaryBtn {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .terms {
+    font-size: 0.75rem;
+  }
+
+  .forgot {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .welcome {
+    font-size: 0.75rem;
+  }
+
+  input {
+    font-size: 0.85rem;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .googleBtn {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .divider span {
+    font-size: 0.75rem;
+  }
+
+  .primaryBtn {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .terms {
+    font-size: 0.7rem;
+  }
+
+  .forgot {
+    font-size: 0.8rem;
+  }
+
+  .googleBtn img {
+    width: 18px;
+    height: 18px;
+  }
+}

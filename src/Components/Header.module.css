@@ -1,27 +1,25 @@
+
 .header {
-  position: fixed;       
-  top: 0;               
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;           
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #f8f9fa;   
+  background: #f8f9fa;
   border-bottom: 1px solid #ddd;
-  z-index: 1000;       
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
 }
-body {
-  padding-top: 80px;
-}
-
 
 .brandLink {
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-   color: #079696;
+  color: #079696;
 }
 
 .centerNav {
@@ -36,9 +34,8 @@ body {
 }
 
 .centerNav a:hover {
-   color: #333;
+  color: #333;
 }
-
 
 .authNav {
   display: flex;
@@ -54,8 +51,6 @@ body {
   transition: 0.3s;
 }
 
-
-
 .active {
   background: #333;
   color: #fff;
@@ -70,3 +65,42 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Mobile / Tablet */
+@media (max-width: 768px) {
+  .centerNav {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+    padding: 0.5rem 0;
+  }
+
+  .centerNav.active {
+    display: flex;
+  }
+
+  .centerNav a {
+    padding: 0.5rem 1rem;
+  }
+
+  .authNav {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+    order: 3;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
