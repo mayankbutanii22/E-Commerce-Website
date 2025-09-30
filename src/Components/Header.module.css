@@ -72,16 +72,21 @@
   cursor: pointer;
 }
 
-/* Mobile / Tablet */
+/*  Tablet / Mobile (max-width: 768px)  */
+
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .centerNav {
-    display: none; 
+    display: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 0.5rem;
     background: #f8f9fa;
     border-top: 1px solid #ddd;
     padding: 0.5rem 0;
+    order: 2;
   }
 
   .centerNav.active {
@@ -92,15 +97,24 @@
     padding: 0.5rem 1rem;
   }
 
+  
   .authNav {
+    flex-direction: column;
     width: 100%;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
     order: 3;
   }
 
-  .hamburger {
-    display: block;
+  .authNav button, .authNav .logout {
+    width: 90%;
+    margin: 0.3rem auto;
+    text-align: center;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
   }
 }
 
