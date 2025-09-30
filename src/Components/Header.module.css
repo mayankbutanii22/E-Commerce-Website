@@ -72,13 +72,16 @@
   cursor: pointer;
 }
 
-/*  Tablet / Mobile (max-width: 768px)  */
 
+
+/* Tablet / Mobile (max-width: 768px) */
 @media (max-width: 768px) {
+  /* Show hamburger */
   .hamburger {
     display: block;
   }
 
+  /* Center navigation hidden by default, shown on hamburger click */
   .centerNav {
     display: none;
     flex-direction: column;
@@ -97,13 +100,19 @@
     padding: 0.5rem 1rem;
   }
 
-  
+  /* authNav moved inside hamburger menu */
   .authNav {
+    display: none; /* Hide by default */
     flex-direction: column;
     width: 100%;
     justify-content: center;
     margin: 0.5rem 0;
     order: 3;
+  }
+
+  /* Show authNav when hamburger active */
+  .centerNav.active + .authNav {
+    display: flex;
   }
 
   .authNav button, .authNav .logout {
@@ -112,9 +121,11 @@
     text-align: center;
   }
 
+  /* Header adjustments */
   .header {
     justify-content: space-between;
     padding: 0.8rem 1rem;
   }
 }
+
 
