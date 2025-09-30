@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { register } from "../Redux/authSlice";
+import { updateProfile } from "../Redux/authSlice";
 import { Link } from "react-router-dom";
 import styles from "./Profile.module.css";
 
@@ -14,6 +14,7 @@ function Profile() {
     contact: "",
   });
 
+  
   useEffect(() => {
     if (user) {
       setForm({
@@ -29,8 +30,18 @@ function Profile() {
   };
 
   const handleSave = () => {
-    dispatch(register(form)); 
-    alert("Profile saved successfully! ");
+    if (!form.username) {
+      alert("Username is required!");
+      return;
+    }
+
+   
+    dispatch(updateProfile(form));
+
+  
+    setForm({ fullName: "", username: "", contact: "" });
+
+    alert("Profile updated successfully!");
   };
 
   if (!user) {
@@ -38,8 +49,7 @@ function Profile() {
       <div className={styles.redirect}>
         <h2>You are not logged in</h2>
         <p>
-          Please <Link to="/login">Login</Link> or{" "}
-          <Link to="/signup">Sign Up</Link> to access your profile.
+          Please <Link to="/login">Login</Link> or <Link to="/signup">Sign Up</Link> to access your profile.
         </p>
       </div>
     );
@@ -47,7 +57,7 @@ function Profile() {
 
   return (
     <div className={styles.profile}>
-      <h2>Welcome back, {form.username}!</h2>
+      <h2>Welcome back, {user.username}!</h2>
       <div className={styles.details}>
         <label>
           Full Name:
@@ -85,6 +95,10 @@ function Profile() {
 }
 
 export default Profile;
+
+
+
+
 
 
 
