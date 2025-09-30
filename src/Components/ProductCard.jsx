@@ -17,7 +17,7 @@ function ProductCard() {
 
   return (
     <div className={styles.page}>
-      {/* Search Bar */}
+      
       <div className={styles.filterBar}>
         <input
           type="text"

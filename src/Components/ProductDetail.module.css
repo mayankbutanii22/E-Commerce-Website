@@ -78,7 +78,7 @@
   .detail {
     flex-direction: column;  
     padding: 2rem;
-    margin: 3rem 1rem;
+    margin: 5rem auto;
     gap: 1.5rem;
   }
 
@@ -120,7 +120,7 @@
 @media (max-width: 480px) {
   .detail {
     padding: 1.5rem 1rem;
-    margin: 2rem 0.5rem;
+    margin: 5rem auto;
     gap: 1rem;
   }
 

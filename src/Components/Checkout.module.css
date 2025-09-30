@@ -1,6 +1,6 @@
 .checkout {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 5.5rem auto;
   padding: 50px;
   background: #f9fafb;
   border-radius: 12px;
@@ -113,6 +113,7 @@ textarea:focus {
 @media (max-width: 768px) {
   .checkout {
     padding: 30px 20px;
+    margin: 5rem auto;
   }
 
   h2 {
@@ -148,7 +149,7 @@ textarea:focus {
 @media (max-width: 480px) {
   .checkout {
     padding: 20px 15px;
-    margin: 20px auto;
+    margin: 5rem auto;
   }
 
   h2 {

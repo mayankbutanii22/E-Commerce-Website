@@ -116,16 +116,17 @@
   }
 
   .authNav button, .authNav .logout {
-    width: 90%;
-    margin: 0.3rem auto;
+    width: 30%;
+    margin: 0.3rem;
     text-align: center;
   }
 
-  /* Header adjustments */
+  
   .header {
     justify-content: space-between;
     padding: 0.8rem 1rem;
   }
-}
+  }
+
 
 
