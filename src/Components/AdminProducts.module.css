@@ -1,5 +1,5 @@
 .admin {
-  padding: 2rem;
+  padding: 6rem 3rem;
   background: #f5f7fb;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
@@ -132,68 +132,44 @@ h2 {
 }
 
 
-/* Tablet & Mobile responsiveness */
 
-/* Tablet (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .form {
-    grid-template-columns: 1fr; /* stack inputs vertically */
-    gap: 1rem;
-  }
-  
-  .form button {
-    grid-column: span 1;
-  }
-
-  .item {
-    flex-direction: column; /* stack thumbnail & info */
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .thumb {
-    margin-bottom: 0.5rem;
-  }
-
-  .actions {
-    top: auto;
-    right: auto;
-    margin-top: 0.5rem;
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
-
-/* Mobile (max-width: 768px) */
+/* Tablet & below (max-width: 768px) */
 @media (max-width: 768px) {
   .admin {
-    padding: 1rem;
+    padding: 3rem 1.5rem;
   }
 
   .form {
+    grid-template-columns: 1fr;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
+    gap: 0.8rem;
   }
 
   .form input,
   .form textarea,
   .form select {
     font-size: 0.9rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.7rem;
   }
 
   .form button {
+    grid-column: span 1;
     padding: 0.6rem;
     font-size: 0.9rem;
   }
 
   .item {
-    padding: 0.8rem;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 1rem;
   }
 
   .thumb {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0.6rem;
+    margin-right: 0;
   }
 
   .info h4 {
@@ -209,9 +185,69 @@ h2 {
     padding: 0.15rem 0.4rem;
   }
 
+  .actions {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 0.6rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
   .actions .edit,
   .actions .delete {
-    padding: 0.3rem 0.6rem;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile small (max-width: 480px) */
+@media (max-width: 480px) {
+  .admin {
+    padding: 2rem 1rem;
+  }
+
+  .form {
+    padding: 0.8rem;
+    gap: 0.7rem;
+  }
+
+  .form input,
+  .form textarea,
+  .form select {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.6rem;
+  }
+
+  .form button {
+    font-size: 0.85rem;
+    padding: 0.55rem;
+  }
+
+  .item {
+    padding: 0.8rem;
+  }
+
+  .thumb {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info h4 {
+    font-size: 0.9rem;
+  }
+
+  .info p {
     font-size: 0.75rem;
+  }
+
+  .actions {
+    gap: 0.4rem;
+  }
+
+  .actions .edit,
+  .actions .delete {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
   }
 }

@@ -8,7 +8,7 @@ function AdminProducts() {
   const products = useSelector(state => state.products.items);
   const dispatch = useDispatch();
 
-  // Form state
+
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
